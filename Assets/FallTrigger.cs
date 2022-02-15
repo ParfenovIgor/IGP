@@ -9,7 +9,7 @@ public class FallTrigger : MonoBehaviour
         if (playerMovement == null)
             return;
         
-        Debug.Log("Fail");
+        Debug.Log("You lose. Your score is " + PlayerMovement.Score.ToString());
         playerMovement.enabled = false;
     }
 }

@@ -9,7 +9,7 @@ public class FinishTrigger : MonoBehaviour
         if (playerMovement == null)
             return;
         
-        Debug.Log("Finish");
+        Debug.Log("You win. Your score is " + PlayerMovement.Score.ToString());
         playerMovement.enabled = false;
 
         var rigidbody = other.GetComponent<Rigidbody>();

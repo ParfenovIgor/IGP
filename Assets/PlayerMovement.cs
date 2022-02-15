@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float Speed = 1f;
     public float JumpVelocity = 10;
-    
+    public static int Score = 0; // The total number of collected coins
+
     private int _directionIndex;
     private Rigidbody _rigidbody;
 
